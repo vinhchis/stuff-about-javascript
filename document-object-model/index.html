@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM JS</title>
+  <style>
+    .changeable {
+      font-size: 16px;
+      color: black;
+      border: 2px solid green;  
+    }
+
+    .changeableClassList {
+      font-size: 20px;
+      color: orangered;
+      font-weight: 400;
+      background-color: antiquewhite;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Using DOM JS</h1>
+  <p class="changeable">This is a sample test with DOM JS</p>
+  <div>
+    <h3>Use style-property(inline)</h3>
+    <!-- <button id="changeColorButton" onclick="changeStyleColor()">Change Color</button> -->
+    <button id="changeColorButton">Change Color</button>
+    <button id="changeSizeButton">Change Size</button>
+    <button id="increaseSizeButton">Increase Size</button>
+    <button id="decreaseSizeButton">Decrease Size</button>
+  </div>
+  <br/>
+  <div>
+    <h3>Use classList (internal or external)</h3>
+    <button id="addStyleButton">Add ClassList</button>
+    <button id="removeStyleButton">Remove ClassList</button>
+    <button id="toggleColorButton">Toggle ClassList</button>
+  </div>
+
+
+
+
+
+
+  <script src="./script.js"></script>
+
+  </script>
+</body>
+
+</html>

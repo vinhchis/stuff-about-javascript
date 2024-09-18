@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let dataPlayerArray = [];
+        async function fetchPlayerData() {
+            try {
+                const response = await fetch("player.json");
+                const data = await response.json();
+                dataPlayerArray.push(data);
+                return dataPlayerArray;
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+        async function getListPlayer() {
+            let data = await fetchPlayerData();
+            // console.log("data", data[0]);
+            data.map(item=>{
+                console.log("item",item)
+                return item;
+            })
+        }
+        getListPlayer();
+    </script>
+</body>
+
+</html>

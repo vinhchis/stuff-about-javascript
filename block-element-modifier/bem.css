@@ -1,0 +1,30 @@
+
+.box1 {
+    width: 100px;
+    height: 400px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+}
+
+.box2 {
+    width: 200px;
+    height: 400px;
+    background-color: var(--primary-color);
+    font-size: 17px;
+    color: var(--main-color-text)
+}
+
+p {
+    color: var(--main-color-text)
+}
+.content {
+    font-size: 20px;
+    color: var(--main-color-text)
+}
+
+.box3{
+    width: 300px;
+    height: 300px;
+    font-size: 30px;
+    background-color: var(--primary-color)
+}
